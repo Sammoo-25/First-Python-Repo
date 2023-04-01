@@ -1,0 +1,51 @@
+###rem_space_pun_marks.py
+
+text = "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. " \
+       "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. " \
+       "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. " \
+       "Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+t = text.replace(' ', '||')
+u = t.replace(',', '?')
+print(u)
+
+###rev_str.py
+
+def reverse_words(text):
+    wordlist = text.split(' ')
+
+    def revers_word(w):
+        rev_w = w[::-1]
+        return rev_w
+
+    rev_list = []
+    for i in wordlist:
+        rev_list.append(revers_word(i))
+    return ' '.join(rev_list)
+
+
+text = "Hello This is Reverce String"
+print(reverse_words(text))
+
+###single_different_number.py
+
+def stray(arr):
+    for i in arr:
+        if arr.count(i) == 1:
+            print(f"Single element of list: {i}")
+
+
+stray([1, 1, 1, 1, 1, 1, 54])
+
+###str_list.py
+
+vowel = ["A", "a", "E", "e", "I", "i", "O", "o", "U", "u"]
+str = "rInsHccjQwHNLHFUlDnUaAa"
+str.lower()
+ls = []
+for i in str:
+    if i in vowel:
+       ls.append(i)
+print(f"List of vowel letters: {ls}")
+print(f"Count of vowel letters in 'ls': {len(ls)}")
+
+#print(*vowel)
