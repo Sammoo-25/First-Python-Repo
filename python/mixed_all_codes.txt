@@ -49,3 +49,14 @@ print(f"List of vowel letters: {ls}")
 print(f"Count of vowel letters in 'ls': {len(ls)}")
 
 #print(*vowel)
+
+###Isograms
+def is_isogram(string):
+    string = string.lower()
+    freq = {}    
+    for letter in string:        
+        if letter in freq:
+            return False        
+        else:
+            freq[letter] = 1
+    return True
