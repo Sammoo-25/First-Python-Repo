@@ -15,5 +15,4 @@ print("This is dev_q ")
 print("dev_q")
 print("branch")
 
->>>>>>> dev_q
 print(order("is2 Thi1s T4est 3a"))
