@@ -11,6 +11,7 @@ def order(sentence):
                 ls[k], ls[k + 1] = ls[k + 1], ls[k]
                 arr[k], arr[k + 1] = arr[k + 1], arr[k]
     return ' '.join(arr)
-
-
+print("Hello")
+print("World")
+print("!!!")
 print(order("is2 Thi1s T4est 3a"))
