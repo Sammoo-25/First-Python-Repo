@@ -8,3 +8,7 @@ def duplicate_count(text):
         if res[key] > 1:
             count += 1
     return count
+
+print("Hello")
+print("World")
+print("!!!!!")
